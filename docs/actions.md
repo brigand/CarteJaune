@@ -9,7 +9,7 @@
 
 **Sagas:**
 
- - [saveVaccinations](/reducers/saveVaccinations.js#L35)
+ - [saveVaccinations](/sagas/saveVaccinations.js#L35)
 
 
 ## ADD_VACCINATION_FAILURE
@@ -44,7 +44,7 @@
 
 **Sagas:**
 
- - [fetchVaccinations](/reducers/fetchVaccinations.js#L38)
+ - [fetchVaccinations](/sagas/fetchVaccinations.js#L38)
 
 
 ## FETCH_VACCINATIONS_FAILURE

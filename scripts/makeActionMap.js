@@ -148,7 +148,7 @@ function getMarkdown(data) {
     section += `\n**Sagas:**\n\n`;
     x.sagas.forEach((saga) => {
       const name = `[${saga.name}]`;
-      const url = `(${PREFIX}/reducers/${saga.name}.js#L${saga.action.line})`;
+      const url = `(${PREFIX}/sagas/${saga.name}.js#L${saga.action.line})`;
       section += ` - ${name}${url}\n`;
     });
 
