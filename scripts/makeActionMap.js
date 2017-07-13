@@ -137,18 +137,18 @@ function getMarkdown(data) {
     const x = data[name];
     let section = ``;
     section += `## ${name}\n\n`;
-    section += `**Action Creator:** [${x.name}](${PREFIX}/actions/${x.name}.js#L${x.line})\n\n`;
+    section += `**Action Creator:** [${x.name}](${PREFIX}/actions/${x.name}.js#L${x.line + 1})\n\n`;
     section += `**Reducers:**\n\n`;
     x.reducers.forEach((reducer) => {
       const name = `[${reducer.name}]`;
-      const url = `(${PREFIX}/reducers/${reducer.name}.js#L${reducer.line})`;
+      const url = `(${PREFIX}/reducers/${reducer.name}.js#L${reducer.line + 1})`;
       section += ` - ${name}${url}\n`;
     });
 
     section += `\n**Sagas:**\n\n`;
     x.sagas.forEach((saga) => {
       const name = `[${saga.name}]`;
-      const url = `(${PREFIX}/sagas/${saga.name}.js#L${saga.action.line})`;
+      const url = `(${PREFIX}/sagas/${saga.name}.js#L${saga.action.line + 1})`;
       section += ` - ${name}${url}\n`;
     });
 
