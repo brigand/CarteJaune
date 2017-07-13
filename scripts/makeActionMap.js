@@ -1,7 +1,7 @@
 const fs = require('fs');
 const read = file => fs.readFileSync(file, 'utf-8');
 
-const PREFIX = `/brigand/CarteJaune/blob/master`;
+const PREFIX = ``;
 // const PREFIX = `/nikgraf/CarteJaune/blob/master/actions/addVaccinationSuccess.js`;
 
 const dirs = ['actions', 'components', 'constants', 'containers', 'reducers', 'sagas', 'selectors'];
